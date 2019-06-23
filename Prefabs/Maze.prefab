@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7361095768974321427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4413873662022315724}
+  - component: {fileID: 7266883221279319230}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4413873662022315724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361095768974321427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7266883221279319230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361095768974321427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc05ca0529054c41bfc95fc73083573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size:
+    x: 15
+    z: 15
+  cellPrefab: {fileID: 8411925710559390410, guid: 670a3b733ff441e46b9c425c3fc7aa56,
+    type: 3}
+  generationStepDelay: 0.01
+  passagePrefab: {fileID: 3395647925034010401, guid: 8b9d96e0af583d34ea9a1505301bbcfb,
+    type: 3}
+  doorPrefab: {fileID: 2244325420971878300, guid: 6da6f0b6d8bbde34cb96892720290f99,
+    type: 3}
+  doorProbability: 0.05
+  wallPrefabs:
+  - {fileID: 2217296903443123677, guid: 56a7af3a9f3bcf749a4dc475a8bb3dd5, type: 3}
+  roomSettings:
+  - floorMaterial: {fileID: 2100000, guid: f4dfbbdd7ed824e71bf39cb0dafd2b99, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 2cd607346dbd37f41a37f41616cd5cb1, type: 2}
